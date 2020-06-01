@@ -1,0 +1,21 @@
+﻿@{
+    ViewBag.Title = "Учет сигналов";
+}
+<div>
+    <h3>Учет сигналов</h3>
+    <table>
+        <tr>
+            <td>Документ</td>
+            <td>Название сигнала</td>
+            <td>Реальный сигнал</td>
+        </tr>
+        @foreach (var s in ViewBag.Outsides)
+        {
+            <tr>
+                <td><p>@s.Id</p></td>
+                <td><p>@s.Name_signal</p></td>
+                <td><p>@s.Real_signal</p></td>
+            </tr>
+        }
+    </table>
+</div>
