@@ -132,9 +132,10 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\Document.cs" />
-    <Compile Include="Models\Inside.cs" />
+    <Compile Include="Models\Signal.cs" />
+    <Compile Include="Models\SignalInObj.cs" />
     <Compile Include="Models\Object.cs" />
-    <Compile Include="Models\Outside.cs" />
+    <Compile Include="Models\SignalInDoc.cs" />
     <Compile Include="Models\SignalContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

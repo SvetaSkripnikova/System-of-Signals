@@ -5,16 +5,13 @@ using System.Web;
 
 namespace WebApplication5.Models
 {
-    public class Inside
+    public class Signal
     {
-
-        //id реального сигнала
+        //id сигнала
         public string Id { get; set; }
+        //имя сигнала в документе
+        public string Name_signal { get; set; }
         //реальный сигнал
         public string Real_signal { get; set; }
-        //тег
-        public string Teg { get; set; }
-        //система
-        public string System { get; set; }
     }
 }

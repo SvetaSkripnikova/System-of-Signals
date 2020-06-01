@@ -13,17 +13,17 @@ namespace WebApplication5.Models
 {
     public class SignalContext: DbContext
     {
-        public DbSet<Outside> Outsides { get; set; }
-        public DbSet<Inside> Insides { get; set; }
+        public DbSet<SignalInDoc> Outsides { get; set; }
+        public DbSet<SignalInObj> Insides { get; set; }
     }
 
     public class SignalDbInitializer : DropCreateDatabaseAlways<SignalContext>
     {
         protected override void Seed(SignalContext db)
         {
-            db.Outsides.Add(new Outside { Id = "1", Name_signal = "a", Real_signal = "a1" });
-            db.Outsides.Add(new Outside { Id = "2", Name_signal = "b", Real_signal = "b1" });
-            db.Outsides.Add(new Outside { Id = "3", Name_signal = "c", Real_signal = "c1" });
+            db.Outsides.Add(new SignalInDoc { Id = "1", Name_signal = "a", Real_signal = "a1" });
+            db.Outsides.Add(new SignalInDoc { Id = "2", Name_signal = "b", Real_signal = "b1" });
+            db.Outsides.Add(new SignalInDoc { Id = "3", Name_signal = "c", Real_signal = "c1" });
 
             base.Seed(db);
         }
